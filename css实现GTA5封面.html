@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: grid;
+        grid-template-columns: 180px 180px 1fr 180px;
+        grid-template-rows: 20% 40% 20% 20%;
+        width: 100%;
+        max-width: 600px;
+        min-height: 500px;
+        border: 5px solid #dee906;
+        height: 700px;
+        background-color: #000000;
+        margin: 0 auto;
+        grid-template-areas:
+          'one two two three'
+          'four five five five'
+          'six five five five'
+          'six seven eight eight';
+      }
+      .box div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 70% 4%;
+        cursor: pointer;
+      }
+      .box div:nth-child(1) {
+        grid-area: one;
+        background-color: azure;
+        clip-path: polygon(0% 0%, 88% 0, 113% 97%, 0% 87%);
+      }
+      .box div:nth-child(2) {
+        grid-area: two;
+        background-color: #f5c60a;
+        clip-path: polygon(0% 0%, 100% 0%, 84.45% 97%, 15.55% 95%);
+      }
+      .box div:nth-child(3) {
+        grid-area: three;
+        background-color: #0adaf5;
+        clip-path: polygon(12% 0%, 100% 0%, 100% 87%, -9% 96%);
+      }
+
+      .box div:nth-child(4) {
+        grid-area: four;
+        background-color: #f700ff;
+        clip-path: polygon(0% 0.15%, 106.34% 4.98%, 121.32% 65.63%, 99.66% 100.89%, 0% 102.41%);
+      }
+      .box div:nth-child(5) {
+        grid-area: five;
+        background-color: #700af5;
+        clip-path: polygon(
+          6.4% 3.48%,
+          64.24% 1.59%,
+          100% 0%,
+          100% 95%,
+          47% 100%,
+          47% 63.21%,
+          6.23% 67.02%,
+          15.3% 44.04%
+        );
+      }
+      .box div:nth-child(6) {
+        grid-area: six;
+        background-color: #0af5ba;
+        clip-path: polygon(0 9.3%, 100% 5.42%, 100.14% 100.82%, 0% 100%);
+      }
+      .box div:nth-child(7) {
+        grid-area: seven;
+        background-color: #b87dd7;
+        clip-path: polygon(5.92% 18.47%, 99.31% 6.39%, 98.38% 100%, 5.3% 100.85%);
+      }
+      .box div:nth-child(8) {
+        grid-area: eight;
+        background-color: #637fe7;
+        clip-path: polygon(5% 9.35%, 100% 0%, 101% 100%, 5% 100%);
+      }
+      .box div:nth-child(9) {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #df8975;
+        clip-path: polygon(6.5% 12.35%, 100% 0%, 100% 100%, 5.55% 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>
+        <img src="https://pic1.zhimg.com/80/v2-43f6cf9519c6c22f9525f8859bb92018_720w.png" alt="" />
+      </div>
+      <div>
+        <img src="https://picx.zhimg.com/80/v2-8b5444e66efaf9c1833f98c8fdd2b40b_720w.png" alt="" />
+      </div>
+      <div>
+        <img
+          src="https://pica.zhimg.com/80/v2-9e4351256c80b09f8e900fb3a1531e65_720w.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img src="https://picx.zhimg.com/80/v2-0ce6321f90c5b2647de365a9c2a46843_720w.png" alt="" />
+      </div>
+      <div>
+        <img
+          src="https://pic1.zhimg.com/80/v2-5f68ee395d2d55594f01b2c93812c708_720w.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img src="https://picx.zhimg.com/80/v2-5f1f3fe4a818f26efb6c3b6948348ed2_720w.png" alt="" />
+      </div>
+      <div>
+        <img
+          src="https://picx.zhimg.com/80/v2-0ce8562e34c139bad8c2062ecf2a72e0_720w.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img src="https://picx.zhimg.com/80/v2-823eae68c186072961c9029ed621f19b_1440w.png" alt="" />
+      </div>
+      <div>
+        <img
+          src="https://pic1.zhimg.com/80/v2-134c068adac02da200d0ee80b486be0d_720w.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
+
